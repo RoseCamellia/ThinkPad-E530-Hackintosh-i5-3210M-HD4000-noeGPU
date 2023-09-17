@@ -4,7 +4,7 @@
   
   1.Graphics(Currently no hardware encode/decode acceleration support,fixing)
   
-  2.Sound(Conexant CX20571)
+  2.Sound(Conexant CX20590)
   
   3.Brightness change(via preference settings,brightness keys may cause unexpected shutdown)
   
