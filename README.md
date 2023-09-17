@@ -1,0 +1,2 @@
+# EFI
+ ThinkPad E530
