@@ -2,7 +2,7 @@
  
   What is available:
   
-  1.Graphics(Currently no hardware encode/decode acceleration)
+  1.Graphics(Currently no hardware encode/decode acceleration support,fixing)
   
   2.Sound(Conexant CX20571)
   
@@ -10,7 +10,11 @@
   
   4.Wired network(RTL8111 family)
  
-  5.Battery status
+  5.Touchpad and Thinkpad's red dot
+
+  6.Battery status
+
+  7.Integrated camera
   
   What is still unavailable:
   
