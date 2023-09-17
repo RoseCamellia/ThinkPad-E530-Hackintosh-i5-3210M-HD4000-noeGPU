@@ -15,13 +15,13 @@
   6.Battery status
 
   7.Integrated camera
+
+  8.CPU boost
   
   What is still unavailable:
   
-  1.CPU boost(fixing)
+  1.Wi-Fi(No kexts for Realtek RTL8188CE)
   
-  2.Wi-Fi(No kexts for Realtek RTL8188CE)
-  
-  3.Brightness keys
+  2.Brightness keys
 
  Enjoy Hackintosh!
