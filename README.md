@@ -2,7 +2,7 @@
  
   What is available:
   
-  1.Graphics(Currently no hardware encode/decode acceleration support,fixing)
+  1.Graphics(Hardware encode/decode acceleration support has been fixed)
   
   2.Sound(Conexant CX20590)
   
