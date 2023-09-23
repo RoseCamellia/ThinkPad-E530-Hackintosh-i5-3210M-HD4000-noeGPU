@@ -17,6 +17,8 @@
   7.Integrated camera
 
   8.CPU boost
+
+  9.SD Card Reader
   
   What is still unavailable:
   
