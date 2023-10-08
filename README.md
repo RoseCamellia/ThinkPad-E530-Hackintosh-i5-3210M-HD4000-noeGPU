@@ -1,4 +1,6 @@
  ThinkPad E530 EFI for Hackintosh.Please change UUID and MLB,etc.
+
+ Based on OpenCore 0.6.3
  
   What is available:
   
