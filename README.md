@@ -18,7 +18,7 @@
 
   7.Integrated camera
 
-  8.CPU boost
+  8.CPU frequency changing(no boost,Max 2.5GHz)
 
   9.SD Card Reader
   
