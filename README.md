@@ -1,6 +1,6 @@
 Hackintosh EFI for ThinkPad E530 iGPU version.Newest macOS Sonoma supported and tested.
 
-Based on OpenCore 0.8.8.
+Based on OpenCore 0.9.5.
 
 What's available:
 
