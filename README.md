@@ -20,11 +20,10 @@ What's available:
 
 8.Camera
 
+9.Brightness keys(use them will cause shutdown before,fixed since version 1.1.0)
 Problems:
 
 1.Wireless network(No drivers for RTL8188CE)
-
-2.Brightness keys(use them will cause shutdown)
 
 Enjoy hackintosh!
 
