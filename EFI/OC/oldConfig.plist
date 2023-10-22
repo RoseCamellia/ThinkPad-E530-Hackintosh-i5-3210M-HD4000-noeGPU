@@ -38,6 +38,14 @@
                     <key>Path</key>
                     <string>SSDT-XOSI.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-CPUpm.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array>
@@ -453,7 +461,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.5</string>
+                    <string>V1.8.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -566,42 +574,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/CryptexFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CPUFriend.kext</string>
-                    <key>Comment</key>
-                    <string>V1.2.7</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/CPUFriend</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CPUFriendDataProvider.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.1</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -728,6 +700,60 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/VoodooPS2Keyboard</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>CPUFriend.kext</string>
+                    <key>Comment</key>
+                    <string>V1.2.7</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/CPUFriend</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>FeatureUnlock.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/FeatureUnlock</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>HibernationFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V1.4.2</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/HibernationFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -986,7 +1012,7 @@
             <key>Quirks</key>
             <dict>
                 <key>AppleCpuPmCfgLock</key>
-                <true/>
+                <false/>
                 <key>AppleXcpmCfgLock</key>
                 <false/>
                 <key>AppleXcpmExtraMsrs</key>
@@ -1006,7 +1032,7 @@
                 <key>DisableRtcChecksum</key>
                 <true/>
                 <key>ExtendBTFeatureFlags</key>
-                <true/>
+                <false/>
                 <key>ExternalDiskIcons</key>
                 <false/>
                 <key>ForceAquantiaEthernet</key>
@@ -1053,11 +1079,11 @@
                 <key>ConsoleAttributes</key>
                 <integer>0</integer>
                 <key>HibernateMode</key>
-                <string>None</string>
+                <string>Auto</string>
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
-                <false/>
+                <true/>
                 <key>InstanceIdentifier</key>
                 <string></string>
                 <key>LauncherOption</key>
@@ -1075,7 +1101,7 @@
                 <key>PollAppleHotKeys</key>
                 <false/>
                 <key>ShowPicker</key>
-                <true/>
+                <false/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
@@ -1084,9 +1110,9 @@
             <key>Debug</key>
             <dict>
                 <key>AppleDebug</key>
-                <true/>
+                <false/>
                 <key>ApplePanic</key>
-                <true/>
+                <false/>
                 <key>DisableWatchDog</key>
                 <true/>
                 <key>DisplayDelay</key>
@@ -1130,7 +1156,7 @@
                 <key>AuthRestart</key>
                 <false/>
                 <key>BlacklistAppleUpdate</key>
-                <true/>
+                <false/>
                 <key>DmgLoading</key>
                 <string>Any</string>
                 <key>EnablePassword</key>
@@ -1273,9 +1299,9 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>SystemAudioVolume</key>
-                    <data>Rg==</data>
+                    <data>ZA==</data>
                     <key>boot-args</key>
-                    <string>keepsyms=1 debug=0x100 alcid=28 -lilubetaall -crypt_force_avx amfi_get_out_of_my_way=0x1</string>
+                    <string>keepsyms=1 debug=0x100 alcid=28 -lilubetaall -crypt_force_avx amfi_get_out_of_my_way=0x1 -no_compat_check</string>
                     <key>csr-active-config</key>
                     <data>/w8AAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1337,16 +1363,47 @@
             <true/>
             <key>CustomMemory</key>
             <false/>
+            <key>DataHub</key>
+            <dict>
+                <key>ARTFrequency</key>
+                <integer>0</integer>
+                <key>BoardProduct</key>
+                <string>Mac-6F01561E16C75D06</string>
+                <key>BoardRevision</key>
+                <data></data>
+                <key>DevicePathsSupported</key>
+                <integer>0</integer>
+                <key>FSBFrequency</key>
+                <integer>0</integer>
+                <key>InitialTSC</key>
+                <integer>0</integer>
+                <key>PlatformName</key>
+                <string></string>
+                <key>SmcBranch</key>
+                <data>YnJhbmNoAAA=</data>
+                <key>SmcPlatform</key>
+                <data>ajMwAAAAAAA=</data>
+                <key>SmcRevision</key>
+                <data>AgIPAABE</data>
+                <key>StartupPowerEvents</key>
+                <integer>0</integer>
+                <key>SystemProductName</key>
+                <string>MacBookPro9,2</string>
+                <key>SystemSerialNumber</key>
+                <string>C02J40UDDTY3</string>
+                <key>SystemUUID</key>
+                <string>3B6A451F-283D-4F9A-9A2B-B4BBA6268346</string>
+            </dict>
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02931500GUN9PRAD</string>
+                <string>C02230600J9F1YJ1H</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>1793</integer>
+                <integer>1540</integer>
                 <key>ROM</key>
                 <data>E5gdpSSM</data>
                 <key>SpoofVendor</key>
@@ -1354,11 +1411,85 @@
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro16,1</string>
+                <string>MacBookPro9,2</string>
                 <key>SystemSerialNumber</key>
-                <string>C02Z503DMD6N</string>
+                <string>C02J40UDDTY3</string>
                 <key>SystemUUID</key>
-                <string>9C330715-B144-480B-AC33-6705E61101AF</string>
+                <string>3B6A451F-283D-4F9A-9A2B-B4BBA6268346</string>
+            </dict>
+            <key>PlatformNVRAM</key>
+            <dict>
+                <key>BID</key>
+                <string>Mac-6F01561E16C75D06</string>
+                <key>FirmwareFeatures</key>
+                <data>d/UNwQAAAAA=</data>
+                <key>FirmwareFeaturesMask</key>
+                <data>f/8f/wAAAAA=</data>
+                <key>MLB</key>
+                <string>C02230600J9F1YJ1H</string>
+                <key>ROM</key>
+                <data>E5gdpSSM</data>
+                <key>SystemSerialNumber</key>
+                <string>C02J40UDDTY3</string>
+                <key>SystemUUID</key>
+                <string>3B6A451F-283D-4F9A-9A2B-B4BBA6268346</string>
+            </dict>
+            <key>SMBIOS</key>
+            <dict>
+                <key>BIOSReleaseDate</key>
+                <string>03/18/2022</string>
+                <key>BIOSVendor</key>
+                <string></string>
+                <key>BIOSVersion</key>
+                <string>429.0.0.0.0</string>
+                <key>BoardAssetTag</key>
+                <string>Base Board Asset Tag</string>
+                <key>BoardLocationInChassis</key>
+                <string>Part Component</string>
+                <key>BoardManufacturer</key>
+                <string></string>
+                <key>BoardProduct</key>
+                <string>Mac-6F01561E16C75D06</string>
+                <key>BoardSerialNumber</key>
+                <string>C02230600J9F1YJ1H</string>
+                <key>BoardType</key>
+                <integer>10</integer>
+                <key>BoardVersion</key>
+                <string>MacBookPro9,2</string>
+                <key>ChassisAssetTag</key>
+                <string>Asset Tag#</string>
+                <key>ChassisManufacturer</key>
+                <string></string>
+                <key>ChassisSerialNumber</key>
+                <string>C02J40UDDTY3</string>
+                <key>ChassisType</key>
+                <integer>10</integer>
+                <key>ChassisVersion</key>
+                <string>Mac-6F01561E16C75D06</string>
+                <key>FirmwareFeatures</key>
+                <data>d/UNwQAAAAA=</data>
+                <key>FirmwareFeaturesMask</key>
+                <data>f/8f/wAAAAA=</data>
+                <key>PlatformFeature</key>
+                <integer>0</integer>
+                <key>ProcessorType</key>
+                <integer>1540</integer>
+                <key>SmcVersion</key>
+                <data></data>
+                <key>SystemFamily</key>
+                <string>MacBook Pro</string>
+                <key>SystemManufacturer</key>
+                <string></string>
+                <key>SystemProductName</key>
+                <string>MacBookPro9,2</string>
+                <key>SystemSKUNumber</key>
+                <string>System SKU#</string>
+                <key>SystemSerialNumber</key>
+                <string>C02J40UDDTY3</string>
+                <key>SystemUUID</key>
+                <string>3B6A451F-283D-4F9A-9A2B-B4BBA6268346</string>
+                <key>SystemVersion</key>
+                <string>1.0</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1430,11 +1561,11 @@
                 <key>DisconnectHda</key>
                 <false/>
                 <key>MaximumGain</key>
-                <integer>-15</integer>
+                <integer>-10</integer>
                 <key>MinimumAssistGain</key>
-                <integer>-30</integer>
+                <integer>-25</integer>
                 <key>MinimumAudibleGain</key>
-                <integer>-55</integer>
+                <integer>-50</integer>
                 <key>PlayChime</key>
                 <string>Enabled</string>
                 <key>ResetTrafficClass</key>
@@ -1446,6 +1577,18 @@
             <true/>
             <key>Drivers</key>
             <array>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>OpenCanopy.efi</string>
+                </dict>
                 <dict>
                     <key>Arguments</key>
                     <string></string>
@@ -1469,18 +1612,6 @@
                     <false/>
                     <key>Path</key>
                     <string>HiiDatabase.efi</string>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>LoadEarly</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>OpenCanopy.efi</string>
                 </dict>
                 <dict>
                     <key>Arguments</key>
